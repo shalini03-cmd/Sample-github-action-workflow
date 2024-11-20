@@ -11,3 +11,6 @@ jobs:
         steps:
             - name: Print a message
               run: echo "Push happen to this repository"
+
+            - name: Ttest message
+              run: echo "Test"
