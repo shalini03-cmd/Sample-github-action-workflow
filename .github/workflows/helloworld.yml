@@ -17,3 +17,7 @@ jobs:
       - name: "Print current date"
         run: date  
 
+      - name:  "Print current Time" 
+        run:  Time 
+
+
