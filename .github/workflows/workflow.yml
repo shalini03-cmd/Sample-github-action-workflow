@@ -4,7 +4,7 @@ name: "Hello world"
 on:
   push:
     branches:
-      - master
+      - developer
       - production
 
 jobs:
