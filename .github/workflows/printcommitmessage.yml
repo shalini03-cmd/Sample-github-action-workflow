@@ -3,7 +3,7 @@ name: Print commit message
 on:
     push:
         branches:
-            - master #Trigger on push to any branch
+            - developer #Trigger on push to any branch
 jobs:
     printcommitmessage:
         runs-on: ubuntu-latest

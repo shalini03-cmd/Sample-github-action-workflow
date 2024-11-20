@@ -5,11 +5,11 @@ name: "Multievent pipeline workflow"
 on:
    push:
      branches:
-        - master
-        - test
+        - developer #hashout temp as creating new files for testing
+        - feature
    pull_request:
        branches:
-            - master     
+            - developer     
         
 
 jobs:

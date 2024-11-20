@@ -3,11 +3,11 @@ name: Separate Jobs for Push and Pull
 on:
     push:
         branches:
-            - master
+            - developer
             - feature
     pull_request:
         branches:
-            - master        
+            - developer #replacing master temp        
 
 jobs:
     on_push:

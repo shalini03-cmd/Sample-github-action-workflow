@@ -1,0 +1,15 @@
+name: Daily Job
+
+on:
+  schedule:
+    - cron: '50 15 * * *'
+
+jobs:
+    daily-job:
+       runs-on: ubuntu-latest
+
+       steps:
+         - name: Log daily job message
+           run: echo "Daily job done"
+       
+       
