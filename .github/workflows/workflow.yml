@@ -5,16 +5,17 @@ on:
   push:
     branches:
       - master
-      - production
+      
 
 jobs:
   hello-world:
     runs-on: ubuntu-latest
     steps:
-      - name: "Print hello world"
-        run: echo "Hello world"           
+      - name: "Print shalini"
+        run: echo "shalini"           
 
       - name: "Print current date"
         run: date  
+
       
 
