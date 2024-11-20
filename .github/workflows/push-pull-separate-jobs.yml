@@ -1,0 +1,25 @@
+name: Separate Jobs for Push and Pull
+
+on:
+    push:
+        branches:
+            - master
+            - feature
+    pull_request:
+        branches:
+            - master        
+
+jobs:
+    on_push:
+        if: github.event_name == 'push'
+        runs-on: ubuntu-latest
+        steps:
+            - name: Run for push event
+              run: echo " Push detected ${{github.ref_name}}"    
+              
+    on_pull_request:
+        if: github.event_name == 'pull_request'
+        runs-on: ubuntu-latest
+        steps:
+           - name: Run for pull event
+             run: echo " Pull detected ${{github.head_ref}}"         
