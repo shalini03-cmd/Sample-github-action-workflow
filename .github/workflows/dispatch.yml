@@ -1,12 +1,12 @@
 name: Manual Dispatch workflow
 
-on;
+on:
    workflow_dispatch:  #it enables to run from github manually
 
 jobs:
     manual_jobs:
-        runs_on: ubuntu_latest
+          runs-on: ubuntu-latest
         
-        steps:
-            - name: Run manual job
-              run: echo "This workflow triggers manually"
+          steps:
+             - name: Run manual job
+               run: echo "This workflow triggers manually"
